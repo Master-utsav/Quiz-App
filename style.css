@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins:wght@600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient-blue {
+    background-color: #130f40;
+    background-image: linear-gradient(180deg, #130f40 0%, #000000 100%);
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.outerBlur1 {
+    box-shadow: 0 0 6vh 1vh #F2F7A1;
+}
+
+.outerBlur2 {
+    box-shadow: 0 0 6vh 1vh whitesmoke;
+}
+
+.circleMove1 {
+    transition: circle;
+
+}
+
+.mark{
+    -moz-appearance: none;
+    /* Remove default appearance */
+    -webkit-appearance: none;
+    /* For WebKit browsers */
+    appearance: none;
+    /* For Firefox */
+    width: 20px;
+    /* Set the desired width of the custom radio button */
+    height: 20px;
+    /* Set the desired height of the custom radio button */
+    border: 2px solid #f2f7a1;
+    box-shadow: 0 0 1vh #f2f7a1;
+    /* Set border color */
+    border-radius: 50%;
+    /* Create a circular shape */
+    outline: none;
+    /* Remove outline */
+
+}
+
+input[type="radio"]:checked {
+    background-color: #ba32e4;
+    box-shadow: 0 0 1vh #ba32e4;
+
+    /* Set background color when checked */
+}
+
+.redButton {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0px;
+    height: 0px;
+    border: 3px solid rgb(239 68 68);
+    /* border-block:initial; */
+    border-spacing: 5px;
+    border-style: solid;
+    box-shadow: 0 0 2vh rgb(239 68 68);
+    border-radius: 50%;
+    outline: none;
+    background-color: rgb(239 68 68);
+    box-shadow: 0 0 2vh rgb(239 68 68);
+}
+
+.greenButton {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0px;
+    height: 0px;
+    border: 3px solid rgb(34 197 94);
+    /* border-block:initial; */
+    border-spacing: 5px;
+    border-style: solid;
+    box-shadow: 0 0 2vh rgb(34 197 94);
+    border-radius: 50%;
+    outline: none;
+    background-color: rgb(34 197 94);
+    box-shadow: 0 0 2vh rgb(34 197 94);
+}
+
+
+/* Container for the radio button and label */
+.radio-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Add some spacing for better presentation */
+
+.p_color {
+    text-shadow: 0 0 1vh #ba32e4;
+}
+
+.p_color:hover {
+    text-shadow: none;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+}
+
+#scor {
+    font-size: 2rem
+        /* 20px */
+    ;
+    line-height: 2rem
+        /* 28px */
+    ;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 8rem;
+    min-height: 2.2rem;
+    align-items: center;
+}
+
+.again {
+    background-color: #ba32e4;
+    font-size: 1.5rem
+        /* 20px */
+    ;
+    line-height: 1.75rem
+        /* 28px */
+    ;
+    font-family: sans-serif;
+    padding-top: 1.35rem;
+    padding-bottom: 1.35rem;
+    border: none;
+    border-bottom-right-radius: 0.75rem
+        /* 12px */
+    ;
+    border-bottom-left-radius: 0.75rem
+        /* 12px */
+    ;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 200ms;
+    visibility: 70%;
+
+}
+
+.again:hover {
+    background-color: rgb(244 114 182)
+}
+
+.again:focus {
+    background-color: rgba(43, 8, 26, 0.562);
+}
+
+.again:focus #scor {
+    color: #ba32e4;
+}
+
+.shadow-inner {
+    box-shadow: 0 0 1vh 0.5vh rgba(244, 114, 181, 0.123);
+
+}
+

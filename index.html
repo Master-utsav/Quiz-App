@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Pngtree.png" type="image/x-icon">
+   
+</head>
+<body class=" overflow-x-hidden overflow-y-hidden m-0 p-0 box-border ">
+    <div class=" sm:min-h-[100vh] sm:min-w-[100vw] w-screen h-screen bg-gradient-blue items-center relative  overflow-x-hidden overflow-y-hidden">
+        <div class=" bg-yellowlight circle border-0 outline-none sm:h-[28%] sm:w-[13%] absolute sm:top-[10%] sm:left-[24%] outerBlur1 opacity-60 h-[20%] w-[40%] top-[5%] left-[15%]"></div>
+        <div class=" bg-slate-50 circle border-none outline-none sm:h-[28%] sm:w-[13%] absolute sm:bottom-[15%] sm:left-[58%] outerBlur2 opacity-60 h-[20%] w-[40%] bottom-[5%] right-[15%]"></div>
+        <div id="quizBox" class="quizBox sm:min-h-[50vh] sm:max-h-[70vh] sm:min-w-[30vw] sm:max-w-[35vw] min-h-[50vh] max-h-[80vh] min-w-[70vw] max-w-[80vw] bg-blue-100 bg-opacity-10 justify-center items-center flex backdrop-blur-[1vh]  mx-auto absolute sm:top-[18%] sm:left-[32%] top-[25%] left-[14%]   rounded-xl shadow-inner">
+            <button id="startButton" class=" cursor-pointer sm:w-[25vw] sm:h-[10vh] w-[55vw] h-[10vh] mx-auto bg-purple rounded-md text-yellowlight   font-bold text-4xl  font-mullish  bg-opacity-40 hover:bg-pink-400 hover:bg-opacity-80 hidden font-md justify-center items-center focus:bg-red-950 focus:bg-opacity-20 focus:text-purple content-center">Start Quiz</button>
+            <div id="quizTemplate" class="flex flex-col gap-2 sm:min-h-[50vh] sm:max-h-[70vh] sm:min-w-[30vw] sm:max-w-[35vw] min-h-[50vh] max-h-[60vh] min-w-[70vw] max-w-[70vw]">
+                <form class="flex flex-col gap-2 sm:min-h-[50vh] sm:max-h-[70vh] sm:min-w-[30vw] sm:max-w-[35vw] min-h-[50vh] max-h-[60vh] min-w-[70vw] max-w-[70vw]" id="form">
+                    <h1 class="sm:min-h-[10vh] min-w-[80%] font-noto font-bold text-xl text-center text-white sm:pl-5 sm:pr-5 pl-1 pr-1" id="questionHead"></h1>
+                    <div id="optionsLabel" class="optionsLabel text-white flex flex-col gap-8 sm:mt-2 sm:pt-4 sm:pb-4 sm:pl-5 mt-1 pb-2 pl-2 pt-2 sm:max-h-[50%] max-h-[70%]">
+                        <label id="option_1" class="font-noto font-semibold cursor-pointer text-xl text-white hover:text-purple radio-container" onclick="updateSelection(this)">
+                            <input id="b1" class="mr-3 p-3 options mark" type="radio" name="options" value="opt1" >
+                            <p id="option_1_p" class="p_color"></p>
+                        </label>
+                      <label  id="option_2" class="font-noto font-semibold cursor-pointer text-xl text-white hover:text-purple radio-container"  onclick="updateSelection(this)">
+                            <input id="b2" class="mr-3 p-3 options mark" type="radio" name="options" value="opt2" >
+                            <p id="option_2_p" class="p_color"></p>
+                        </label>
+                    
+                        <label  id="option_3" class="font-noto font-semibold cursor-pointer text-xl text-white hover:text-purple radio-container" onclick="updateSelection(this)">
+                            <input id="b3" class="mr-3 p-3 options mark" type="radio" name="options" value="opt3">
+                            <p id="option_3_p" class="p_color"></p>
+                        </label>
+                    
+                        <label id="option_4" class="font-noto font-semibold text-xl cursor-pointer text-white hover:text-purple radio-container" onclick="updateSelection(this)">
+                            <input id="b4" class="mr-3 p-3 options mark" type="radio" name="options" value="opt4" >
+                            <p id="option_4_p" class="p_color"></p>
+                        </label>
+                    </div>
+                        <button id="next" class="bg-purple sm:w-[100%] sm:h-[100%] w-[100%] h-[30%] text-2xl font-md font-sans pt-4 pb-4 rounded-br-xl rounded-bl-xl focus:bg-pink-400 ease-in-out bg-opacity-70 duration-200 hidden cursor-pointer">NEXT</button>
+                        <input id="submit" type="submit" valsue="Submit" class="bg-purple sm:w-[100%] sm:h-[100%] w-[100%] h-[30%]  text-2xl font-md font-sans pt-4 pb-4 rounded-br-xl border-none rounded-bl-xl cursor-pointer hover:bg-pink-400  ease-in-out bg-opacity-70 duration-200 hidden">
+                </form>  
+            </div>
+            <!-- <input type="date" name="" id="" min="16-09-2025" max="16-09-2028"> -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
